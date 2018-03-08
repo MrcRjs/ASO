@@ -1,7 +1,6 @@
 #!/bin/bash
 
-id -u $(whoami);
-id -g $(whoami);
-cat /etc/passwd |grep $(whoami);
+id -u $1;
+id -g $1;
+cat /etc/passwd |grep $1;
 echo ~;
-
